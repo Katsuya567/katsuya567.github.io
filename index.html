@@ -1,86 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>BunBabe 🐰</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BunBabe 🐰🧶</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fff0f5;
-      color: #5a3d5c;
-      text-align: center;
-    }
-    header {
-      background-color: #f7c6d9;
-      padding: 30px 10px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #5a3d5c;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    .card {
-      background: white;
-      border-radius: 15px;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 300px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      background-color: #f7c6d9;
-      padding: 15px;
-      font-size: 0.9em;
-    }
+    body { margin:0; font-family: Arial, sans-serif; scroll-behavior: smooth; background: #fff5f8; color: #5a3d5c;}
+    header { background:#fce4ec; padding:20px; position:fixed; width:100%; top:0; z-index:100; box-shadow:0 2px 4px rgba(0,0,0,0.1);}
+    header nav a { margin:0 15px; text-decoration:none; color:#5a3d5c; font-weight:bold;}
+    section { padding:120px 20px 60px; min-height:100vh;}
+    #hero { background:#f8bbd0; color:white; text-align:center; display:flex; flex-direction:column; justify-content:center; align-items:center;}
+    #hero h1 { font-size:3em; margin:0;}
+    .container { max-width:900px; margin:auto;}
+    .card { background:#fff0f5; padding:20px; margin:15px 0; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1);}
+    table { width:100%; border-collapse: collapse; background:white;}
+    th, td { border:1px solid #ddd; padding:10px; text-align:left;}
+    th { background:#f8bbd0;}
+    h2 { margin-top:0;}
+    a.button { display:inline-block; margin-top:10px; padding:10px 20px; background:#f06292; color:white; text-decoration:none; border-radius:8px;}
   </style>
 </head>
-
 <body>
 
 <header>
-  <h1>BunBabe 🐰🧶</h1>
-  <p>Handmade crochet crafts • Cute • Cozy</p>
   <nav>
-    <a href="#shop">Shop</a>
+    <a href="#hero">Home</a>
     <a href="#about">About</a>
+    <a href="#shop">Shop</a>
     <a href="#contact">Contact</a>
+    <a href="#orders">Orders</a>
   </nav>
 </header>
 
-<section id="shop">
-  <h2>Shop</h2>
-  <div class="card">Bunny Plush 🐰<br>Handmade crochet</div>
-  <div class="card">Keychains 🔑<br>Custom colors</div>
-  <div class="card">Custom Orders 💌<br>DM to order</div>
+<!-- HERO SECTION -->
+<section id="hero">
+  <div class="container">
+    <h1>BunBabe Crochet</h1>
+    <p>Handmade with love 💖</p>
+  </div>
 </section>
 
+<!-- ABOUT SECTION -->
 <section id="about">
-  <h2>About BunBabe</h2>
-  <p>
-    BunBabe is a handmade crochet brand creating soft, cozy,
-    and cute crafts stitched with love.
-  </p>
+  <div class="container">
+    <h2>About BunBabe</h2>
+    <p>We make the sweetest crochet crafts — from plushies to custom keychains. Every piece is handmade with care and love!</p>
+  </div>
 </section>
 
+<!-- SHOP SECTION -->
+<section id="shop">
+  <div class="container">
+    <h2>Our Shop</h2>
+    <div class="card">Bunny Plush 🐰 — GH₵ 60</div>
+    <div class="card">Crochet Keychain 🔑 — GH₵ 25</div>
+    <div class="card">Custom Orders 💌 — DM to order</div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
 <section id="contact">
-  <h2>Contact</h2>
-  <p>DM us on Instagram</p>
-  <p>@bunbabe</p>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Instagram: @bunbabe</p>
+    <p>WhatsApp: 05XXXXXXXX</p>
+    <a class="button" href="https://wa.me/05XXXXXXXX" target="_blank">Order via WhatsApp</a>
+  </div>
 </section>
 
-<footer>
-  © 2025 BunBabe
-</footer>
-
-</body>
-</html>
+<!-- ORDER TRACKER SECTION (for you) -->
+<section id="orders">
+  <div class="container">
+    <h2>📦 BunBabe Order Tracker</h2>
+    <table>
+      <tr>
+        <th>Customer</th>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Status</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td>Ama</td>
+        <td>Bunny Plush 🐰</td>
+        <td>GH
