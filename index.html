@@ -3,53 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BunBabe 🐰🧶</title>
+  <title>BunBabe</title>
   <style>
-    body { margin:0; font-family: Arial, sans-serif; scroll-behavior: smooth; background: #fff5f8; color: #5a3d5c;}
-    header { background:#fce4ec; padding:20px; position:fixed; width:100%; top:0; z-index:100; box-shadow:0 2px 4px rgba(0,0,0,0.1);}
-    header nav a { margin:0 15px; text-decoration:none; color:#5a3d5c; font-weight:bold;}
-    section { padding:120px 20px 60px; min-height:100vh;}
-     #hero {
-  background: url('cb52d899-6d05-40a1-9ffc-95f0843f3537.png') no-repeat center center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-    #hero h1 { font-size:3em; margin:0;}
-    .container { max-width:900px; margin:auto;}
+    .hero {
+      position: relative;
+      background: url('8ca05138-986c-4cf4-8098-333ebd09c5f5.png') center/cover no-repeat;
+      height: 100vh; /* full screen hero */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.3); /* soft overlay so text stands out */
+    }
+
+    .hero h1 {
+      position: relative;
+      color: #fff;
+      font-size: 4rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="shop.html">Shop</a> |
-    <a href="contact.html">Contact</a> |
-    <a href="orders.html">Orders</a>
-  </nav>
-</header>
-
-<section id="hero">
-  <div class="container">
-    <h1>BunBabe Crochet</h1>
-    <p>Handmade with love 💖</p>
-  </div>
-</section>
-
-<section id="intro">
-  <div class="container">
-    <h2>Welcome to BunBabe!</h2>
-    <p>We create cute handmade crochet crafts. Scroll down to explore our shop, learn about us, and place your orders.</p>
-  </div>
-</section>
+  <section class="hero">
+    <h1>Welcome to BunBabe 🧶</h1>
+  </section>
 
 </body>
 </html>
+
