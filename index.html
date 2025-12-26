@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BunBabe</title>
   <style>
-    /* Reset default margin/padding */
     html, body {
       margin: 0;
       padding: 0;
@@ -13,40 +12,46 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Hero section */
     .hero {
       position: relative;
-      height: 100vh; /* full viewport height */
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
+      overflow: hidden;
 
-      /* Background image from local folder */
+      /* Background */
       background: url('8ca05138-986c-4cf4-8098-333ebd09c5f5.png') center/cover no-repeat;
+      transition: transform 10s ease; /* for subtle zoom */
     }
 
-    /* Overlay to make text readable */
+    /* Smooth zoom on load */
+    .hero:hover {
+      transform: scale(1.05);
+    }
+
+    /* Gradient overlay for better readability */
     .hero::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.3); /* semi-transparent black overlay */
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2));
       z-index: 1;
     }
 
     /* Hero text */
     .hero h1 {
       position: relative;
-      z-index: 2; /* above overlay */
+      z-index: 2;
       color: #fff;
       font-size: 4rem;
       font-weight: bold;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-      margin: 0 20px; /* padding for small screens */
+      text-shadow: 3px 3px 15px rgba(0,0,0,0.8);
+      margin: 0 20px;
     }
 
-    /* Responsive text for smaller screens */
+    /* Mobile responsive */
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2.5rem;
@@ -62,3 +67,4 @@
 
 </body>
 </html>
+
