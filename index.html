@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BunBabe</title>
   <style>
-    /* Reset and basic setup */
-    body, html {
+    /* Reset default margin/padding */
+    html, body {
       margin: 0;
       padding: 0;
       height: 100%;
@@ -22,31 +22,31 @@
       align-items: center;
       text-align: center;
 
-      /* Background image */
-      background: url('https://i.imgur.com/your-image.png') center/cover no-repeat;
+      /* Background image from local folder */
+      background: url('8ca05138-986c-4cf4-8098-333ebd09c5f5.png') center/cover no-repeat;
     }
 
-    /* Overlay for text readability */
+    /* Overlay to make text readable */
     .hero::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,0.3); /* soft dark overlay */
+      background: rgba(0, 0, 0, 0.3); /* semi-transparent black overlay */
       z-index: 1;
     }
 
     /* Hero text */
     .hero h1 {
       position: relative;
-      z-index: 2;
+      z-index: 2; /* above overlay */
       color: #fff;
       font-size: 4rem;
       font-weight: bold;
       text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-      margin: 0 20px; /* small padding for mobile */
+      margin: 0 20px; /* padding for small screens */
     }
 
-    /* Responsive text */
+    /* Responsive text for smaller screens */
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2.5rem;
